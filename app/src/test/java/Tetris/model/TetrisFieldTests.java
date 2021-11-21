@@ -66,7 +66,7 @@ public class TetrisFieldTests
 		TetrisArray array2 = field.add(shape2);
 		assertTrue("Error: Game should end when a shape can't be added", field.endGame());
 	}
-*/	
+*/
 	@Test
 	public void testLocateFullRow()
 	{
@@ -101,6 +101,6 @@ public class TetrisFieldTests
 		}
 		field.adjust(1,4, new Block(Color.BLUE));
 		field.clearRows();
-		assertNotNull("Error: clearRow does not move blocks down", field.getBlock(1,4).getColor());
+		assertNotNull("Error: clearRow does not move blocks down", field.getBlock(2,4).getColor());
 	}
 }
